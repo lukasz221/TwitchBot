@@ -1,0 +1,15 @@
+D:\repos\TwBot\TwBot\bin\Debug\net6.0\TwBot.exe
+D:\repos\TwBot\TwBot\bin\Debug\net6.0\TwBot.deps.json
+D:\repos\TwBot\TwBot\bin\Debug\net6.0\TwBot.runtimeconfig.json
+D:\repos\TwBot\TwBot\bin\Debug\net6.0\TwBot.dll
+D:\repos\TwBot\TwBot\bin\Debug\net6.0\TwBot.pdb
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.csproj.AssemblyReference.cache
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.AssemblyInfoInputs.cache
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.AssemblyInfo.cs
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.csproj.CoreCompileInputs.cache
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.dll
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\refint\TwBot.dll
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.pdb
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\TwBot.genruntimeconfig.cache
+D:\repos\TwBot\TwBot\obj\Debug\net6.0\ref\TwBot.dll
