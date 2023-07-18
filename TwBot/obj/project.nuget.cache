@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "c8xK2a8WOK2oCc8tyBPLpWiGWr1Mce3iimTUF4NZdyhBCd4Ez7yMV0rPyc53+vsEp6GR1d7LJzAGRfAMxSeREg==",
+  "dgSpecHash": "bpK0iaXmQ4Gmsew2pC4B65uJqHoW2tnjQ5K6CwBwL9MWax2j1fjWEBTB3dsgUOvchZVOyBh2ekRowtSXhSo+Xg==",
   "success": true,
   "projectFilePath": "D:\\repos\\TwBot\\TwBot\\TwBot.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Lukasz\\.nuget\\packages\\inputsimulatorplus\\1.0.7\\inputsimulatorplus.1.0.7.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'InputSimulatorPlus 1.0.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "InputSimulatorPlus",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

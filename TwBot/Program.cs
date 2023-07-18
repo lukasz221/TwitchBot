@@ -1,4 +1,6 @@
 ﻿using System;
+using WindowsInput;
+using WindowsInput.Native;
 
 namespace TwitchBot
 {
@@ -6,40 +8,37 @@ namespace TwitchBot
     {
         static void Main(string[] args)
         {
+            InputSimulator sim = new InputSimulator();
             int r = 0;
             int l = 0;
             int f = 0;  
             int b = 0;
-            IrcClient client = new IrcClient("irc.twitch.tv", 6667, "mrjkoobot", "oauth:hm07s8h2gcwp2aq3rffr946yopzglo", "mrjkoo");
+            IrcClient client = new IrcClient("irc.twitch.tv", 6667, "MrJKooBot", "oauth:hm07s8h2gcwp2aq3rffr946yopzglo", "mrjkoo");
 
             var pinger = new Pinger(client);
             pinger.Start();
-
-            client.SendIrcMessage("dd");
+            Random rnd = new Random();
 
             while (true)
             {
                 Console.WriteLine("Reading message");
                 var message = client.ReadMessage();
-                if (message.EndsWith("!r"))
+                if (message.EndsWith("!hi"))
                 {
-                    r++;
-                    Console.WriteLine("right" + r);
+                    client.SendChatMessage($"hello");
+                   // sim.Keyboard.Sleep(1000);
+                  //  sim.Keyboard.TextEntry("13213dsadas");
                 }
-                if (message.EndsWith("!l"))
+                if (message.EndsWith("!dice") || (message.EndsWith("!Dice")))
                 {
-                    l++;
-                    Console.WriteLine("left");
+                    client.SendChatMessage($"{rnd.Next(1,6)}");
                 }
-                if (message.EndsWith("!f"))
+                if ((message.EndsWith("!w")) || (message.EndsWith("!W")))
                 {
-                    f++;    
-                    Console.WriteLine("forward");
-                }
-                if (message.EndsWith("!b"))
-                {
-                    b++;
-                    Console.WriteLine("back");
+                    client.SendChatMessage("W");
+                    sim.Keyboard.Sleep(10);
+                    sim.Keyboard.TextEntry("!W");
+                    sim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
                 }
 
                 Console.WriteLine($"Message: {message}");
